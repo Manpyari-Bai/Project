@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-image: url('https://img.freepik.com/premium-photo/calculator-office-tools-stone-black-desk-top-view-free-space-your-text_187166-50765.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.calculator {
+    width: 600px;
+    max-width: 90%;
+    height: 800px;
+    background-color: rgb(31, 52, 212);
+    box-shadow: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    justify-content: flex-end;
+    margin: auto;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.display {
+    background-color: aqua;
+    color: black;
+    font-size: 2.5em;
+    text-align: right;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 200px;
+    min-height: 100px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.btn {
+    background-color: #e0e0e0;
+    color: #000;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f22913;
+}
+
+.clear-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.clear-btn:hover {
+    background-color: red;
+}
+.back-btn{
+    background-color: green;
+}
+
+.equal-btn {
+    background-color: rgb(237, 61, 205);
+    color: #fff;
+}
+
+.equal-btn:hover {
+    background-color: purple;
+}
+@media (max-width: 768px) {
+    .calculator {
+        width: 90%;
+        margin-top: 20vh;
+    }
+    
+    .btn {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+    
+    .buttons {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        width: 100%;
+        margin-top: 20vh;
+    }
+    
+    .btn {
+        padding: 10px;
+        font-size: 1em;
+    }
+    
+    .buttons {
+        gap: 15px;
+    }
+    
+    .display {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+}
